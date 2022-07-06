@@ -49,7 +49,6 @@ header {
 nav a:hover{
     background-color:#2596be;
     color:  #d9c2a3;
-    text-decoration: underline;
 }
 
 .book, .join{
