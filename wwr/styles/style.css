@@ -35,7 +35,7 @@ main section {
 
 #background {
     height: 725px;
-    background-color:
+    background-color:#d9c2a3
 }
 
 body {
@@ -69,9 +69,10 @@ footer {
     color: #ffffff;
 }
 
-footer p {
-    text-size: 1.2em;
-} 
+#background {
+    height: 725px;
+    color:#d9c2a3
+}
 
 footer p a:hover {
     text-decoration: underline;
