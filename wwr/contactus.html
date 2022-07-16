@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Light+300&family=Roboto+Condensed&display=swap');
+
+:root {
+    --header-font: "Roboto Condensed", Helvetica, sans-serif;
+    --paragraph-font: "Roboto Light 300", Helvetica, sans-serif;
+}
+
+.home-title {
+    font-family: var(--header-font);
+    color:#ffffff;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: var(--header-font);
+    color:#396E94;
+}
+
+h2 {
+    font-family: var(--header-font);
+    margin: 2em;
+    text-align: center;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80px;
+    display: flex;
+}
+
+nav {
+    background-color: #396E94 ;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    font-family: var(--header-font);
+}
+
+nav a:hover{
+    background-color:#2596be;
+    color:  #fce072;
+    /*padding: 35px;*/
+}
+
+
+.button-box {
+    text-align: center;
+
+}
+main section {
+    text-align: left;
+
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+#background {
+    height: 725px;
+    background-color:#d9c2a3;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+body {
+    background-color: #2596be;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#ffffff;
+    font-family: var(--header-font);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+
+
+
+.book, .join{
+    color: white;
+    background-color: #2596be; 
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color:#396E94 
+}
+
+.msg {
+    background-color: #fce072;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #396E94;
+    color: #ffffff;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #fce072;
+    text-decoration: none;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+#background {
+    height: 725px;
+    color:#d9c2a3
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.riversText1 {
+    margin-left: 10%;
+        background: #fff;
+        display: grid;
+        width: 80%;
+        height: 50%;
+        padding: 10px;
+        border-radius: 2px 2px 2px 2px;
+        padding-bottom: 50px;
+        
+}
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #396E94;
+  border-radius: 1em;
+  background-color: #fce072;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+  padding: 10px;
+}
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+  margin-bottom: 15px;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+    margin-left: .5em;
+    
+
+    
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+
+    #background {
+        display: none;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rivers.html">Rivers</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+    
+                            
+    </main>
+
+    <footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+            e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+'! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+            feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+        <h3>Dry Oar &copy; 20XX - Your First and Last Name Here</h3>
+        <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
+        <h3><a href="contactus.html">Contact Us</a></h3>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

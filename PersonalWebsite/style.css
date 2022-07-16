@@ -172,12 +172,12 @@ header {
     color: white;
     text-shadow: 2px 2px 2px var(--accent2-color);
     margin-bottom: 0.5em;
-    background-color: #2f466c ;
+    background-color: rgb(47, 70, 108, 0.8) ;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
     padding: 0;
     width: 75%;
     grid-area: 1/1/2/2;
-    margin-left: 20em;
+    margin-left: 18em;
     z-index: 0.5;
     
     border-top:#121e32 solid 10px;
@@ -208,8 +208,8 @@ p {
     overflow: hidden;
     background-color: #121e32;
     width: 24em;
-    clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
-    border-radius: 5px 5px 5px 5px;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    border-radius: 0.5em;
     grid-area: 1/1/2/2;
     z-index: 1;
   }
@@ -286,7 +286,7 @@ p {
       color: white;
       text-shadow: 2px 2px 2px var(--accent2-color);
       margin-bottom: 0.5em;
-      background-color: #2f466c ;
+      background-color: rgb(47, 70, 108, 0.8) ;
       clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
       padding: 0;
       width: 50%;
@@ -312,7 +312,7 @@ p {
       background-color: #121e32;
       width: 24em;
       clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
-      border-radius: 5px 5px 5px 5px;
+      border-radius: 1em;
       grid-area: 1/1/2/2;
       z-index: 1;
     }
