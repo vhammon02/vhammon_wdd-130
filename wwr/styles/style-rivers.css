@@ -103,7 +103,7 @@ nav a:hover{
 
 }
 main section {
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -347,6 +347,7 @@ footer p a:hover {
     .riversText1{
         padding-left: 50px;
         padding-bottom: 0px;
+        align-content: left;
         
     }
     .riversTitle1, .riversTitle2, #card-img1, #card-img2, #card-img3 {
