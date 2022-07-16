@@ -5,38 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Site | Von Hammon Portfolio | Home</title>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+ 
 </head>
 <body>
-    <div id="content">
+    <div class="content">
+        
       
 
-        <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#">Page 2</a>
-                <a href="site-plan.html">Site Plan</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
+        <header id="myHeader">
+           
+            <div class="navbar">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="Images/LogoLight.PNG" alt="Bleistiftspitzer Productions">
+                </a>
+                <div class="dropdown">
+                    <a href="index.html">Home</a>
+                    <a href="#">Link 3</a>
+                    <a href="site-plan.html">site-plan</a>
+                </div>
+            </div>
+            <div class="title">
+                <h1>Bleistiftspitzer Productions</h1>
+            </div>
         </header>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="Images/Gallery/Digital/Rose-mace-COLORrainbowotherapttern.png" class="slider">
+              <div class="text">Digital Art</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="Images/Gallery/Traditional/img20200919_23343232.jpg" class="slider">
+              <div class="text">Traditional Art</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="Images/Gallery/Photos/Mexico.JPG" class="slider">
+              <div class="text">Photography</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="Images/Gallery/Digital/Bucket 0.12 - portrait.jpg" class="slider">
+                <div class="text">Digital Art</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="Images/Gallery/Traditional/tri.jpg" class="slider">
+                <div class="text">Traditional Art</div>
+            </div>
+          
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="Images/Gallery/Photos/Cali.JPG" class="slider">
+                <div class="text">Photography</div>
+            </div>
+            <!-- Next and previous buttons -->
+            
+        </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+
+        <div id="home">
+            <div class="home_content">
+                <h1>Von Hammon</h1>
+                <h2>Portfolio</h2>
+                <div class = "message">
+                    <p>Welcome to my portfolio website.  This site is a work in progress.  I am currently working on it.  Please check back soon for updates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+
+
+
+
     <footer>
-        <h3>Dry Oar &copy; 2022 - Devon Hammon</h3>
+        <h3>Bleishtiftspitzer Productions &copy; 2022 - Devon Hammon</h3>
         <h3><a href="site-plan.html" target="_blank">Site Plan</a></h3>
         <h3><a href="contactus.html">Contact Us</a></h3>
         <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/Facebook.png" alt="fb icon">
+            <a href="https://www.facebook.com/von.hammon/" target="_blank">
+                <img src="Images/icons/Facebook.png" alt="fb icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
+            <a href="https://twitter.com/Bleistiftspitz1" target="_blank">
+                <img src="Images/icons/twitter.png" alt="twitter icon">
             </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+            <a href="https://www.instagram.com/onefancydrawer/?hl=en" target="_blank">
+                <img src="Images/icons/instagram.png" alt="instagram icon">
             </a>
         </div>
     </footer>
+<script>
+    let slideIndex = 0;
+    showSlides();
+        
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }   
+
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
 </body>
 </html>
