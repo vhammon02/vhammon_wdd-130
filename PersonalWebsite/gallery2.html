@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides1" src="Images/Gallery/Design/Bleishtiftspitzerproductions (2) (1).png" style="width:100%">
+  <img class="mySlides1" src="Images/Gallery/Design/OutletCracks03.png" style="width:100%">
+  <img class="mySlides1" src="Images/Gallery/Design/OutletWall01.png" style="width:100%">
+  <img class="mySlides1" src="Images/Gallery/Design/p04-03 (1).png" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+</div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides2" src="img_la.jpg" style="width:100%">
+  <img class="mySlides2" src="img_ny.jpg" style="width:100%">
+  <img class="mySlides2" src="img_chicago.jpg" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+</div>
+</body>
+<script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+    
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+    
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+</script>
+    
+</html>

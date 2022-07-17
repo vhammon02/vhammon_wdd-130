@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site | Von Hammon Portfolio | Home</title>
+    <link rel="stylesheet" href="gallery.css"/>
+ 
+</head>
+<body>
+    <div class="content">
+        
+      
+
+        <header id="myHeader">
+           
+            <div class="navbar">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="Images/LogoLight.PNG" alt="Bleistiftspitzer Productions">
+                </a>
+                <div class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="aboutMe.html">About Me</a>
+                    <a href="site-plan.html">site-plan</a>
+                </div>
+            </div>
+            <div class="title">
+                <h1>Bleistiftspitzer Productions</h1>
+            </div>
+        </header>
+       
+        <section>
+            <h2>Design</h2>
+            <p>This is a gallery of some of the design work I have
+                done over the years. This includes projects I worked on for 
+                class and the production of the school art and literature
+                magazine, the outlet.
+            </p>
+            <div class="slideshow-container1">
+                <img class="mySlides1" src="Images/Gallery/Design/Bleishtiftspitzerproductions.png" alt = "slideimg">
+                <img class="mySlides1" src="Images/Gallery/Design/OutletCracks03.png" alt = "slideimg">
+                <img class="mySlides1" src="Images/Gallery/Design/OutletWall01.png" alt = "slideimg">
+                <img class="mySlides1" src="Images/Gallery/Design/p04-03 (1).png" alt = "slideimg">
+                <img class="mySlides1" src="Images/Gallery/Design/SocialDistance2.png" alt = "slideimg">
+                <button class="button" onclick="plusDivs(-1, 0)">&#10094;</button>
+                <button class="button" onclick="plusDivs(1, 0)">&#10095;</button>
+            </div>
+        </section>
+        <section>
+            <h2>Digital Art</h2>
+            <p>This is a gallery of some of the digital art I have done.  Some of the programs used
+                where Adobe Photoshop, ClipStudio Paint, and Procreate for the iPad.
+            </p>
+            <div class="slideshow-container2">
+                <img class="mySlides2" src="Images/Gallery/Digital/Bucket 0.12 - portrait.jpg" alt = "slideimg">
+                <img class="mySlides2" src="Images/Gallery/Digital/Claire.PNG" alt = "slideimg">
+                <img class="mySlides2" src="Images/Gallery/Digital/Glass.PNG" alt = "slideimg">
+                <img class="mySlides2" src="Images/Gallery/Digital/GolgonethLVL21.png" alt = "slideimg">
+                <img class="mySlides2" src="Images/Gallery/Digital/IMG_0434.PNG" alt = "slideimg">
+                <img class="mySlides2" src="Images/Gallery/Digital/Rose-mace-COLORrainbowotherapttern.png" alt = "slideimg">
+                <img class="mySlides2" src="Images/Gallery/Digital/Rose.PNG" >
+            <button class="button" onclick="plusDivs(-1, 1)">&#10094;</button>
+            <button class="button" onclick="plusDivs(1, 1)">&#10095;</button>
+            </div>
+        </section>
+        <section>
+            <h2>Photography</h2>
+            <p>This is a gallery of some of the photos I have taken.
+            </p>
+            <div class="slideshow-container3">
+                <img class="mySlides3" src="Images/Gallery/Photos/Cali.JPG" alt = "slideimg">
+                <img class="mySlides3" src="Images/Gallery/Photos/Grand.JPG" alt = "slideimg">
+                <img class="mySlides3" src="Images/Gallery/Photos/Idaho.JPG" alt = "slideimg">
+                <img class="mySlides3" src="Images/Gallery/Photos/Mexico.JPG" alt = "slideimg">
+                <img class="mySlides3" src="Images/Gallery/Photos/San.JPG" alt = "slideimg">
+                <img class="mySlides3" src="Images/Gallery/Photos/Utah.JPG" alt = "slideimg">
+                <button class="button" onclick="plusDivs(-1, 1)">&#10094;</button>
+                <button class="button" onclick="plusDivs(1, 1)">&#10095;</button>
+            </div>
+        </section>
+        <section>
+            <div class="slideshow-container4">
+                <img class="mySlides4" src="Images/Gallery/Traditional/block.jpg" alt = "slideimg">
+                <img class="mySlides4" src="Images/Gallery/Traditional/cam.jpg" alt = "slideimg">
+                <img class="mySlides4" src="Images/Gallery/Traditional/claireP.JPG" alt = "slideimg">
+                <img class="mySlides4" src="Images/Gallery/Traditional/cup.jpg" alt = "slideimg">
+                <img class="mySlides4" src="Images/Gallery/Traditional/img20200919_23343232.jpg" >
+                <img class="mySlides4" src="Images/Gallery/Traditional/tri.jpg" >
+                <button class="button" onclick="plusDivs(-1, 1)">&#10094;</button>
+                <button class="button" onclick="plusDivs(1, 1)">&#10095;</button>
+            </div>
+        </section>      
+            
+                
+
+
+    <footer>
+        <h3>Bleishtiftspitzer Productions &copy; 2022 - Devon Hammon</h3>
+        <h3><a href="site-plan.html" target="_blank">Site Plan</a></h3>
+        <h3><a href="contactus.html">Contact Us</a></h3>
+        <div class="social">
+            <a href="https://www.facebook.com/von.hammon/" target="_blank">
+                <img src="Images/icons/Facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com/Bleistiftspitz1" target="_blank">
+                <img src="Images/icons/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.instagram.com/onefancydrawer/?hl=en" target="_blank">
+                <img src="Images/icons/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"];
+        showDivs(1, 0);
+        showDivs(1, 1);
+        
+        
+        function plusDivs(n, no) {
+          showDivs(slideIndex[no] += n, no);
+        }
+        
+        function showDivs(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        
+        var slideIndex = [1,1];
+        var slideId = [ "mySlides3", "mySlides4"];
+        showDivs(1, 0);
+        showDivs(1, 1);
+
+        
+        function plusDivs(n, no) {
+          showDivs(slideIndex[no] += n, no);
+        }
+        
+        function showDivs(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
+        
+</body>
+</html>
