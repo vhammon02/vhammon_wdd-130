@@ -30,14 +30,17 @@
     height: 85%;
     object-fit: cover;
     border: #121e32 solid 0.5em;
+    border-radius: 0.5em;
   }
 section{
-  background-color: #2f466c;
+  background-color:rgb(188,210,222);
+  background: radial-gradient(circle, rgba(100,100,195,0.5) 30%, rgba(58,81,117,0.4100486223662885) 73%, rgba(47,70,108,0.6709886547811994) 100%);
   color: #bcd2de;
   padding: 5em;
   margin: 5em auto;
   height: 100%;
   width: 100%;
+  border-radius: 1em;
 }
 
 section h4 {
@@ -46,6 +49,7 @@ section h4 {
   font-weight: bold;
   margin-bottom: 0.5em;
   margin-top: -1em;
+
 }
 
 section img {
@@ -65,13 +69,14 @@ section img {
   width: 90%;
   background-color: #121e32;
   margin: 0 auto;
+  border-radius: 1em;
 }
 
 
 .content {
     text-align: center;
     grid-template-columns: 150px auto;
-    
+    border-radius: 1em;
 }
 
 .about-me {
@@ -95,7 +100,7 @@ section img {
   height: 20em;
   object-fit: cover;
   margin: auto;
-  
+  border-radius: 1em;
 }  
 
 
@@ -208,7 +213,7 @@ section img {
   height: 15px;
   width: 15px;
   margin: 10px 2px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -265,7 +270,8 @@ header {
     color: white;
     text-shadow: 2px 2px 2px var(--accent2-color);
     margin-bottom: 0.5em;
-    background-color: rgb(47, 70, 108, 0.8) ;
+    background-color:rgb(47,70,108);
+    background: linear-gradient(90deg, rgba(47,70,108,1) 0%, rgba(47,70,108,0.9) 32%, rgba(47,70,108,0.8460291734197731) 54%, rgba(47,70,108,0.29659643435980554) 100%); ;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
     padding: 0;
     width: 75%;
@@ -288,10 +294,13 @@ p {
     width: 4em;
     display: flex;
     border-radius: 50%;
-}
+    border: #2f466c solid 3px;
+    
+    }
 .logo img {
     width: 100%;
     height: 100%;
+    
 }
 .logo a {
     text-decoration: none;
@@ -352,7 +361,8 @@ p {
     font-family: "Source Sans Pro Light 300", Helvetica, sans-serif;
     font-size: 1em;
     color: #e4ddea;
-    background-color: rgb(47, 70, 108,0.75);
+    background-color: rgb(188,210,222);
+    background: radial-gradient(circle, rgba(43, 66, 117, 0.6) 30%, rgba(47,70,108,0.84) 100%);
     padding: 1em;
     border-radius: 0.5em;
     width: 80%;
@@ -363,13 +373,14 @@ p {
   .heading {
     font-family: "Source Sans Pro Light 300", Helvetica, sans-serif;
     color: #f8efff;
-    background-color: rgb(47, 70, 108,0.75);
+    background: rgb(122, 122, 122);
+    background: radial-gradient(circle, rgba(89, 86, 186, 0.5) -20%, rgba(58,81,117,0.8) 90%, rgba(47,70,108,0.6709886547811994) 100%);
     padding: 0em;
     border-radius: 0.5em;
     width: 10em;
     margin: auto;
     display: block;
-    text-shadow: 1px 1px 1px var(--accent2-color);
+    text-shadow: 2px 2px 2px var(--accent2-color);
     margin: 12em auto auto auto;
   }
 
@@ -381,14 +392,16 @@ p {
   }
 
 .scroll-head {
-  background-color: rgba(89, 74, 95, 0.8);
-  color: #dff4ff;
-  text-shadow: 1px 1px 1px var(--accent1-color);
+  background-color: rgb(89,77,94);
+  background: linear-gradient(0deg, rgba(71, 63, 87, 0.8) 1%, rgba(113, 97, 124, 0.6) 50%, rgba(89,77,94,0.9) 100%);
+  color: #ffffff;
+  text-shadow: 2px 2px 2px var(--accent1-color);
   border: #32122d solid 2px;
   border-radius: 2em;
   width: 30em;
   margin: 8em auto 2em auto;
   height: 3em;
+  
 
 }
 
@@ -406,6 +419,7 @@ hr {
   text-align: center;
   margin: 0 auto;
   padding: .4em;
+
 }
 
 .list-container {
@@ -413,21 +427,26 @@ hr {
   margin: 1.5em auto;
   text-align: center;
   width: fit-content;
-  background-color: rgba(89, 74, 95, 0.8) ;
-  padding: 1em;
-  color: #bcd2de;
+  background-color: rgba(211,202,218,0.5);
+  background: radial-gradient(circle, rgba(113, 97, 124, 0.6) 0% , rgba(89,77,94,0.9)) 10%;
+  color: white;
   border: #32122d solid 2px;
+  
 }
 
 li {
   margin: 15px 0;
+  text-shadow: #d3f0ff 2px 2px 2px;
+  color: #ffffff;
+  padding: 15px 30px; 
 }
 
 .scroll-foot {
-  background-color: rgba(89, 74, 95, 0.8);
+ 
   color: #dff4ff;
-  text-shadow: 1px 1px 1px var(--accent1-color);
-
+  text-shadow: 2px 2px 2px var(--accent1-color);
+  background-color: rgb(202,193,209);
+  background: linear-gradient(0deg, rgba(89,77,94,0.8) 1%, rgba(113, 97, 124, 0.6) 50%, rgba(89,77,94,0.9) 100%);
   border-radius: 2em;
   width: 30em;
   margin: 2em auto 8em auto;
@@ -442,20 +461,22 @@ li {
   text-align: center;
   width: 100%;
   height: 14em;
-  background-color:  rgb(47, 70, 108, 0.8);
+  background-color: rgb(188,210,222);
+  background: radial-gradient(circle, rgba(43, 66, 117, 0.6) 30%, rgba(47,70,108,0.84) 100%);
   padding: 1em;
-  color: white;
-  border: #32122d solid 2px;
-  text-shadow: #d3cada 2px 1px 1px;
+  color: #dff4ff;
+  border: #353134 solid 2px;
+  text-shadow: #37323a 2px 2px 2px;
 }
 .mission-container p {
   color: #121e32;
   text-shadow: none;
   border: #2f466c solid 2px;
   padding: 1em;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color:rgba(255, 255, 255, 0.7);
   width: 80%;
   margin: 0 auto;
+
 }
 
 .break {
@@ -475,7 +496,8 @@ li {
       color: white;
       text-shadow: 2px 2px 2px var(--accent2-color);
       margin-bottom: 0.5em;
-      background-color: rgb(47, 70, 108, 0.8) ;
+      background-color:rgb(47,70,108);
+      background: linear-gradient(90deg, rgba(47,70,108,1) 0%, rgba(47,70,108,0.9) 32%, rgba(47,70,108,0.8460291734197731) 54%, rgba(47,70,108,0.29659643435980554) 100%); ;
       clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
       padding: 0;
       width: 50%;
@@ -552,7 +574,7 @@ li {
       margin: 0 auto;
     }
     .scroll-head {
-      background-color: rgba(89, 74, 95, 0.8);
+     
       color: #dff4ff;
       text-shadow: 1px 1px 1px var(--accent1-color);
     
@@ -577,16 +599,16 @@ li {
       margin: 1.5em auto;
       text-align: center;
       width: fit-content;
-      background-color: rgba(89, 74, 95, 0.8) ;
-      padding: 1em;
+      
       color: #bcd2de;
     }
     
     li {
       margin: 10px 0;
+      padding: 10px;
     }
     .scroll-foot {
-      background-color: rgba(89, 74, 95, 0.8);
+      
       color: #dff4ff;
       text-shadow: 1px 1px 1px var(--accent1-color);
     
@@ -606,7 +628,8 @@ li {
     }
     .about-me {
 
-      background-color: #2f466c;
+      background-color: rgb(188,210,222);
+      background: radial-gradient(circle, rgba(43, 66, 117, 0.6) 30%, rgba(47,70,108,0.84) 100%);
       color: white;
       font-family: "Source Sans Pro";
       font-size: 1.2em;
@@ -630,6 +653,7 @@ li {
     grid-row: 1/2;
     margin: 0 auto;
     grid-column: 2/3;
+    border-radius: 3em;
   }  
   .about-me p {
     text-align: center;
