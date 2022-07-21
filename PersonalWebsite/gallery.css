@@ -186,7 +186,7 @@ section {
     object-fit: contain;
     border-radius: 1em;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(18, 30, 50, 0.9);
 }
 
 .mySlides2 {
@@ -196,7 +196,7 @@ section {
     object-fit: contain;
     border-radius: 1em;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(18, 30, 50, 0.9);
 }
 
 .mySlides3 {
@@ -206,7 +206,7 @@ section {
   object-fit: contain;
   border-radius: 1em;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(18, 30, 50, 0.9);
 }
 
 .mySlides4 {
@@ -215,7 +215,7 @@ section {
   object-fit: contain;
   border-radius: 1em;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(18, 30, 50, 0.9);
 }
 
 
@@ -717,7 +717,7 @@ li {
         object-fit: contain;
         border-radius: 1em;
         margin: 0 auto;
-        background-color: rgb(255, 255, 255, 0.7);
+        background-color: rgb(18, 30, 50, 0.9);
     }
     
     .mySlides2 {
@@ -727,7 +727,7 @@ li {
         object-fit: contain;
         border-radius: 1em;
         margin: 0 auto;
-        background-color: rgb(255, 255, 255, 0.7);
+        background-color: rgb(18, 30, 50, 0.9);
     }
     
     .mySlides3 {
@@ -737,7 +737,7 @@ li {
       object-fit: contain;
       border-radius: 1em;
       margin: 0 auto;
-      background-color: rgb(255, 255, 255, 0.7);
+      background-color: rgb(18, 30, 50, 0.9);
     }
     
     .mySlides4 {
@@ -747,6 +747,6 @@ li {
       object-fit: contain;
       border-radius: 1em;
       margin: 0 auto;
-      background-color: rgb(255, 255, 255, 0.7);
+      background-color: rgb(18, 30, 50), 0.9;
     }
 }
