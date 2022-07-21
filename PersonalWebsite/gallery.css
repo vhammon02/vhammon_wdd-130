@@ -320,20 +320,21 @@ header {
 }
 
 .title {
-    font-family: var(--paragraph-font);
-    font-size: 1em;
-    color: white;
-    text-shadow: 2px 2px 2px var(--accent2-color);
-    margin-bottom: 0.5em;
-    background-color: rgb(47, 70, 108, 0.8) ;
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
-    padding: 0;
-    width: 75%;
-    grid-area: 1/1/2/2;
-    margin-left: 18em;
-    z-index: 0.5;
-    
-    border-top:#121e32 solid 10px;
+  font-family: var(--paragraph-font);
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 2px var(--accent2-color);
+  margin-bottom: 0.5em;
+  background-color:rgb(47,70,108);
+  background: linear-gradient(90deg, rgba(47,70,108,1) 0%, rgba(47,70,108,0.9) 32%, rgba(47,70,108,0.8460291734197731) 54%, rgba(47,70,108,0.29659643435980554) 100%); ;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  padding: 0;
+  width: 75%;
+  grid-area: 1/1/2/2;
+  margin-left: 18em;
+  z-index: 0.5;
+  
+  border-top:#121e32 solid 10px;
 }
 
 h1, h2, h3, h4 {
@@ -519,21 +520,22 @@ li {
 }
 
 @media screen and (max-width: 900px) {
-    .title {
-      font-family: var(--paragraph-font);
-      font-size: 1em;
-      color: white;
-      text-shadow: 2px 2px 2px var(--accent2-color);
-      margin-bottom: 0.5em;
-      background-color: rgb(47, 70, 108, 0.8) ;
-      clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-      padding: 0;
-      width: 50%;
-      grid-area: 1/1/2/2;
-      margin-left: 20em;
-      
-      border-top:#121e32 solid 10px;
-    }
+  .title {
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+    color: white;
+    text-shadow: 2px 2px 2px var(--accent2-color);
+    margin-bottom: 0.5em;
+    background-color:rgb(47,70,108);
+    background: linear-gradient(90deg, rgba(47,70,108,1) 0%, rgba(47,70,108,0.9) 32%, rgba(47,70,108,0.8460291734197731) 54%, rgba(47,70,108,0.29659643435980554) 100%); ;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    padding: 0;
+    width: 50%;
+    grid-area: 1/1/2/2;
+    margin-left: 20em;
+    
+    border-top:#121e32 solid 10px;
+  }
     .logo {
         width3: em;
         display: flex;
