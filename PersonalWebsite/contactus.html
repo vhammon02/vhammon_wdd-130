@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site | Von Hammon Portfolio | Home</title>
+    <link rel="stylesheet" href="style.css"/>
+ 
+</head>
+<body>
+    <div class="content">
+        
+      
+
+        <header id="myHeader">
+           
+            <div class="navbar">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="Images/LogoLight.PNG" alt="Bleistiftspitzer Productions">
+                </a>
+                <div class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="aboutMe.html">About Me</a>
+                    <a href="site-plan.html">site-plan</a>
+                </div>
+            </div>
+            <div class="title">
+                <h1>Bleistiftspitzer Productions</h1>
+            </div>
+        </header>
+    
+        <main>
+            <h2>Contact Us</h2>
+            <div class = "contact_us">
+                <p>
+                    Thank you for visiting my website. If you have any questions, please feel free
+                     to contact me at my email, <a class="email" href="mailto: bleistiftspitzerproductions@gmail.com">bleistiftspitzerproductions@gmail.com</a> of the following:
+                </p>
+        </main>
+
+        <section>
+            <div class="contactus">
+                <h4>Contact Us</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/von.hammon/" target="_blank">
+                        <img src="Images/icons/Facebook.png" alt="fb icon" >
+                    </a>
+                    <a href="https://twitter.com/Bleistiftspitz1" target="_blank">
+                        <img src="Images/icons/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://www.instagram.com/onefancydrawer/?hl=en" target="_blank">
+                        <img src="Images/icons/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/von-hammon-b6a195221/" target="_blank">
+                        <img src="Images/icons/linkedIn.png" alt="linkedin icon">
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <h3>Bleishtiftspitzer Productions &copy; 2022 - Devon Hammon</h3>
+        <h3><a href="site-plan.html" target="_blank">Site Plan</a></h3>
+        <h3><a href="contactus.html">Contact Us</a></h3>
+        <div class="social">
+            <a href="https://www.facebook.com/von.hammon/" target="_blank">
+                <img src="Images/icons/Facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com/Bleistiftspitz1" target="_blank">
+                <img src="Images/icons/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.instagram.com/onefancydrawer/?hl=en" target="_blank">
+                <img src="Images/icons/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+<script>
+        // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+   
+</script>
+</body>
+</html>
