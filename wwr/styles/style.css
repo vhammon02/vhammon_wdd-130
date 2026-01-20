@@ -246,6 +246,11 @@ footer p a:hover {
         display: block;
         height: auto;
     }
+
+    header {
+        padding: 5px 10px; 
+        min-height: 40px;
+    }
     nav, footer {
         flex-direction: column;
     }
